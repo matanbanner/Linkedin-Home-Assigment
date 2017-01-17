@@ -1,0 +1,28 @@
+
+<%
+  header ||= rows.inject([]){|keys,h| keys << h.keys}.flatten.uniq
+%>
+
+
+<table>
+  <thead>
+    <tr>
+      <% header.each do |th| %>
+        <th>
+          <%=th.humanize%>
+        </th>
+      <% end %>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% rows.each do |h| %>
+      <tr>
+        <% header.each do |k|%>
+          <td><%= h[k] %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -26,13 +26,22 @@
 </p>
 
 <p>
+  <strong>Skills:</strong>
+  <%= @profile.skills.map{|s| s.name}.join(', ') %>
+</p>
+
+
+<p>
   <strong>Experience:</strong>
-  <%= @profile.experience %>
+  <% if @profile.experience.present? %>
+      <%= render 'table', header: ["company", "title", "duration", "start_date", "end_date"],
+      rows: @profile.experience  %>
+  <% end %>
 </p>
 
 <p>
   <strong>Education:</strong>
-  <%= @profile.education %>
+  <%= render 'table', rows: @profile.education %>
 </p>
 
 <p>
