@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Uid:</strong>
+  <%= @profile.uid %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @profile.name %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @profile.title %>
+</p>
+
+<p>
+  <strong>Current position:</strong>
+  <%= @profile.current_position %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @profile.summary %>
+</p>
+
+<p>
+  <strong>Experience:</strong>
+  <%= @profile.experience %>
+</p>
+
+<p>
+  <strong>Education:</strong>
+  <%= @profile.education %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @profile.score %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @profile.url %>
+</p>
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>
