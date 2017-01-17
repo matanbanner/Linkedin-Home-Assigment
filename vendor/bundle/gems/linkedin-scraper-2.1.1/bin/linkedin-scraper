@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/linkedin-scraper'
+options = {}
+options[:proxy_ip] = ARGV[1]
+options[:proxy_port] = ARGV[2]
+options[:username] = ARGV[3]
+options[:password] = ARGV[4]
+options[:company_details] = ARGV[5]
+
+profile = Linkedin::Profile.new(ARGV[0], options)
+puts JSON.pretty_generate JSON.parse(profile.to_json)
