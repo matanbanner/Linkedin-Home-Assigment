@@ -1,0 +1,15 @@
+current directory: /Users/matanbanner/Documents/linkedin/vendor/bundle/gems/websocket-driver-0.6.4/ext/websocket-driver
+/Users/matanbanner/.rvm/rubies/ruby-2.3.0/bin/ruby -r ./siteconf20170117-77615-1cvutuu.rb extconf.rb
+creating Makefile
+
+current directory: /Users/matanbanner/Documents/linkedin/vendor/bundle/gems/websocket-driver-0.6.4/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/matanbanner/Documents/linkedin/vendor/bundle/gems/websocket-driver-0.6.4/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/matanbanner/Documents/linkedin/vendor/bundle/gems/websocket-driver-0.6.4/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20170117-77615-1uu54af

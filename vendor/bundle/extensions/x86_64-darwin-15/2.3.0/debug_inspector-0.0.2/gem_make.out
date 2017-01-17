@@ -1,0 +1,15 @@
+current directory: /Users/matanbanner/Documents/linkedin/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+/Users/matanbanner/.rvm/rubies/ruby-2.3.0/bin/ruby -r ./siteconf20170117-77615-i24i1b.rb extconf.rb
+creating Makefile
+
+current directory: /Users/matanbanner/Documents/linkedin/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR=" clean
+
+current directory: /Users/matanbanner/Documents/linkedin/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.bundle
+
+current directory: /Users/matanbanner/Documents/linkedin/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20170117-77615-c2y8ke
