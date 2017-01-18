@@ -1,4 +1,5 @@
 class Profile < ApplicationRecord
+
   has_many :skills, dependent: :destroy
 
   serialize :experience, JSON
@@ -14,27 +15,28 @@ class Profile < ApplicationRecord
     end
 
     # calling linkedin
-    p = call_linkedin(url)
+    resp = call_linkedin(url)
 
 
     # setting Profile attributes
-    profile = self.new(
-      uid: uid,
+    profile = self.find_or_initialize_by(uid: uid)
+    profile.assign_attributes(
       url: url,
-      name: p.name,
-      title: p.title,
-      current_position: p.current_companies.first.try(:[], :title),
-      summary: p.summary,
-      experience: (p.current_companies + p.past_companies).to_json,
-      education: p.education.to_json
+      name: resp.name,
+      title: resp.title,
+      current_position: resp.current_companies.first.try(:[], :title),
+      summary: resp.summary,
+      experience: (resp.current_companies + resp.past_companies).to_json,
+      education: resp.education.to_json
     )
 
     # calculate and set score
     profile.score = profile.calc_score
 
     # set skills
-    skills = p.skills.map { |s| Skill.new(name: s)  }
-    profile.skills = skills
+    resp.skills.each do |skill|
+      profile.skills.build(name: skill)
+    end
 
     profile
 
@@ -68,6 +70,5 @@ class Profile < ApplicationRecord
   def score
     read_attribute(:score) || 0
   end
-
 
 end
