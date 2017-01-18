@@ -54,3 +54,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Linkedin scrapper
 gem 'linkedin-scraper'
+
+# Dump DB into fixtures
+gem 'fixtures_dumper'
