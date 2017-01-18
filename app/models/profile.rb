@@ -5,10 +5,17 @@ class Profile < ApplicationRecord
   serialize :experience, JSON
   serialize :education, JSON
 
+  # supports following formats:
+  # https://www.linkedin.com/in/itaiganot
+  # https://www.linkedin.com/in/itaiganot/...
+  # https://www.linkedin.com/in/itaiganot?....
+  URL_REGEX1 = /http[s]?:\/\/www\.linkedin\.com\/in\/(.+)[\?\/]/
+  URL_REGEX2 = /http[s]?:\/\/www\.linkedin\.com\/in\/(.+)/
+
   def self.build(url)
 
     # check URL and extract unique user id if valid
-    if /https?:\/\/www\.linkedin\.com\/in\/(.+)/ =~ url
+    if URL_REGEX1 =~ url || URL_REGEX2 =~ url
       uid = $1
     else
       raise "Error: #{url} not valid URL"
