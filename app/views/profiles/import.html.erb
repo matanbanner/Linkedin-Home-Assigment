@@ -1,0 +1,15 @@
+<p id="alert"><%= alert %></p>
+<h2>Import profiles from Linkedin.com</h2>
+<br>
+<h4>Insert Linkedin profile url to import profile</h4>
+
+
+<%= form_tag("/profiles/import", method: "get") do %>
+
+  <%= url_field_tag(:url,'', size: 75,
+  placeholder: 'e.g. https://www.linkedin.com/in/matan-banner-6aa91843',
+  required: true)
+  %>
+
+  <%= submit_tag("Import") %>
+<% end %>

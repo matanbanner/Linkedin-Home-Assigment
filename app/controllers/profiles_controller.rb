@@ -21,6 +21,21 @@ class ProfilesController < ApplicationController
   def edit
   end
 
+  # GET /profiles/import?url=url
+  def import
+    flash[:alert] = nil
+    url = params[:url]
+    if url.present?
+      if Profile::URL_REGEX2.match(url).nil?
+        flash[:alert] = "Error: #{url} not valid URL"
+      else
+        profile = Profile.build(url)
+        profile.save
+      end
+    end
+  end
+
+
   # POST /profiles
   # POST /profiles.json
   def create
