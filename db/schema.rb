@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170117171501) do
+ActiveRecord::Schema.define(version: 20170118190518) do
 
   create_table "profiles", force: :cascade do |t|
     t.string   "uid"
@@ -24,6 +24,10 @@ ActiveRecord::Schema.define(version: 20170117171501) do
     t.string   "url"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+    t.index ["current_position", "name"], name: "index_profiles_on_current_position_and_name"
+    t.index ["name", "title", "current_position"], name: "index_profiles_on_name_and_title_and_current_position"
+    t.index ["title", "current_position"], name: "index_profiles_on_title_and_current_position"
+    t.index ["uid"], name: "index_profiles_on_uid", unique: true
   end
 
   create_table "skills", force: :cascade do |t|
@@ -31,6 +35,7 @@ ActiveRecord::Schema.define(version: 20170117171501) do
     t.integer  "profile_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["name", "profile_id"], name: "index_skills_on_name_and_profile_id"
     t.index ["profile_id"], name: "index_skills_on_profile_id"
   end
 
