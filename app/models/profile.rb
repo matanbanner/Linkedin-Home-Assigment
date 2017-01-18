@@ -5,7 +5,7 @@ class Profile < ApplicationRecord
   serialize :experience, JSON
   serialize :education, JSON
 
-  # supports following formats:
+  # Supports following formats:
   # https://www.linkedin.com/in/itaiganot
   # https://www.linkedin.com/in/itaiganot/...
   # https://www.linkedin.com/in/itaiganot?....
@@ -48,6 +48,35 @@ class Profile < ApplicationRecord
     profile
 
   end
+
+  # Supported arguments:
+  # profile_filter = { name: 'Gal Artsi', title: 'DevOps Engineer at Novus.io', current_position: 'DevOps Engineer'}
+  #
+  # skills_filter = ["Servers", "SQL", "IIS", "Windows Server", "DevOps", "Linux", "Bash", "Integration"]
+
+  # sql = Profile; profile_filter.each { |column, value| sql = sql.where("#{column} LIKE '%#{value}%'")}
+  def self.filter(profile_filter={}, skills_filter=[])
+
+    # Concatenate sql query
+    sql = self
+    profile_filter.each do |column, value|
+      sql = sql.where("#{column} LIKE '%#{value}%'")
+    end
+
+
+    # Eager loading skills to prevent N+1 queries problem
+    profiles = sql.includes(:skills).order(score: :desc)
+
+    # Filter profiles: selecting only those that their skills contain ALL skills_filter
+    skills_filter_set = skills_filter.to_set
+    profiles.select do |p|
+      profile_skills = p.skills.map(&:name)
+      profile_skills_set = profile_skills.to_set
+
+      skills_filter_set.subset?(profile_skills_set)
+    end
+  end
+
 
   def self.call_linkedin(url)
     p = Linkedin::Profile.new(url)
