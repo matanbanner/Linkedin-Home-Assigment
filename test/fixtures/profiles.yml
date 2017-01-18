@@ -1,23 +1,382 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  uid: MyString
-  name: MyString
-  title: MyString
-  current_position: MyString
-  summary: MyText
-  experience: MyText
-  education: MyText
-  score: 1.5
-  url: MyString
-
-two:
-  uid: MyString
-  name: MyString
-  title: MyString
-  current_position: MyString
-  summary: MyText
-  experience: MyText
-  education: MyText
-  score: 1.5
-  url: MyString
+profile_3:
+  id: 3
+  uid: bracha-madar-34ab2424
+  name: Bracha Madar
+  title: HR Recruiter
+  current_position: Recruiter
+  summary: I specialize in recruiting candidates for Web Development positions, such
+    as PHP Developers, Java Experts, ASP.Net, C++ Developers and more. I also recruit
+    candidates for the Mobile fields, such as Andriod Developers, iOS Developers etc...
+  experience: '[{"title":"Recruiter","company":"Matrix","description":"I specialize
+    in recruiting candidates for Web Development positions, such as PHP Developers,
+    Java Experts, ASP.Net, C++ Developers and more. I also recruit candidates for
+    the Mobile fields, such as Andriod Developers, iOS Developers etc...I have experience
+    working with \"HumaNet\" Software. About the company: Matrix, which employs 6,100
+    IT professionals, is the leading information technology company in Israel. Matrix
+    executes some of the largest IT projects in Israel. Matrix develops and implements
+    leading technologies , software solutions and products, it provides infrastructure
+    and consulting services, outsourcing, offshore, training and assimilation. It
+    represents, and markets the world''s leading software vendors. Among its customers
+    matrix counts hundreds of the leading Israeli organizations and companies in the
+    fields of industry, retail, banking and finances, telecom, defense, health, and
+    the government/public sector.Matrix is traded at the Tel Aviv stock exchange in
+    the TA-100 index and is also traded in the prestigious index of the big dividend-distributing
+    companies – Tel-Div 20. The Matrix sales revenue during 2011 was 1.75 billion
+    NIS, the net profit was 96 million NIS. The research companies (IDC and STKI)
+    have been ranking Matrix in first place in the IT services field in Israel.","company_logo":"https://media.licdn.com/media/p/1/000/024/1ab/07e1176.png","duration":"5
+    years","start_date":"2017-01-01","end_date":"Present"},{"title":"Human Resources","company":"Bezeq","description":"Human
+    Resources (1/2011-12/2011) identifying candidates through social/business networks,
+    initiating contact with candidates - (Head Hunting), identifying additional sources
+    before prospective candidates, sorting and filtering resumes, conducting telephone
+    \u0026 frontal interviews, managing regular contact with candidates and clients.
+    I have experience working with \"ADAM\" Software.Sales Representative (2007-2011):
+    Bezeq Business Accounts - Sold advertising packages and websites to strategic
+    business accounts. I was able to enhance and improve my awareness and attention
+    to detail and sales orientation during my time at Bezeq. I honed strong interpersonal
+    skills through inter-organizational interfaces and continuous work with customers.
+    I developed my capacity to deliver prompt reliable service, my negotiation capabilities,
+    business thinking, my ability to meet deadlines and to work under pressure.About
+    the company: Bezeq The Israel Telecommunication Corp. Limited, together with its
+    subsidiaries, provides various communications services to business and private
+    customers in Israel. It operates in four segments: Fixed-line Domestic Communications,
+    Cellular, International Communications and Internet Services, and Multi-channel
+    Television. The Fixed-line Domestic Communications segment includes telephony
+    services, Internet access services, transmission services, and data communications.
+    The company was founded in 1980.","company_logo":"https://media.licdn.com/media/p/6/000/25f/18b/1b97f23.png","duration":"4
+    years 9 months","start_date":"2007-04-01","end_date":"2011-12-04"}]'
+  education: '[{"name":"The Open University","description":"Master of Business Administration
+    (MBA), Business AdministrationMaster of Business Administration (MBA), Business
+    Administration","degree":null,"major":null,"period":"2011 – 2013","start_date":"2011","end_date":"2013"},{"name":"Haifa
+    University","description":"B.A., Behavioral Sciences: Department of Sociology
+    and AnthropologyB.A., Behavioral Sciences: Department of Sociology and Anthropology","degree":null,"major":null,"period":"2008
+    – 2011","start_date":"2008","end_date":"2011"},{"name":"Ironi g","description":"Matriculation
+    certificate, Economics and SociologyMatriculation certificate, Economics and Sociology","degree":null,"major":null,"period":"2000
+    – 2003","start_date":"2000","end_date":"2003"}]'
+  score: -1.0
+  url: https://www.linkedin.com/in/bracha-madar-34ab2424?authType=name&authToken=Ieyt&trk=prof-sb-browse_map-name
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2017-01-18 01:52:09.995503000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2017-01-18 13:31:45.552187000 Z
+    zone: *2
+    time: *3
+profile_4:
+  id: 4
+  uid: netakaplan
+  name: Neta Kaplan Shertzer
+  title: Co-Founder & Head of Recruiting at DoWise
+  current_position: Co-Founder & Head of Recruiting
+  summary: 'I’m Co-Founder & Head of Recruiting at DoWise with over 12 years of experience
+    in recruitment and helping start-ups and high-tech companies to recruit the very
+    best talents.I specialize in head hunting, tech recruiting, social recruiting
+    and HR and very passionate about it. Feel free to visit DoWise website and learn
+    more about us -http://www.dowise.co.ilIf you wish to apply to our jobs opening,
+    send your CV to: jobs@dowise.co.il'
+  experience: '[{"title":"Co-Founder \u0026 Head of Recruiting","company":"DoWise","location":"Israel","description":"DoWise
+    is a leading recruitment business which specializes in Social Recruiting and Professional
+    Head Hunting for the Web \u0026 Mobile Startups.We focus on hand-picking individuals,
+    searched through the social media networks or from our network of personal connections.To
+    offer such services, we''ve built along the years a wide network, which helps
+    us recruit the very best talents for our clients.With our advanced technology
+    knowledge and our New media expertise, we make every recruitment possible for
+    high-tech companies and startups in particular.We’re a unique business that combines
+    recruitment services and New media knowledge, which brings our clients the best
+    solutions.Feel free to visit DoWise website and learn more about us -http://www.dowise.co.ilIf
+    you wish to apply to our jobs opening, send your CV to: jobs@dowise.co.il","company_logo":"https://media.licdn.com/media/p/2/000/1ea/396/055f2f7.png","duration":"4
+    years 1 month","start_date":"2013-01-01","end_date":"Present"},{"title":"Tech
+    Recruiting Manager","company":"Total Admin \u0026 TECH","description":"TOTAL ADMIN
+    \u0026 TECH is a boutique recruitment company, specializing in recruiting employees
+    for various of fields, such as Web, Mobile, Software, Telecom, Administration
+    and more.With previous experience and contacts in the field,I rehabilitated and
+    managed the recruitment department of Technology and brought it significant achievements.I
+    implementing the Head Hunting Methodology And was an active partner in building
+    and strengthening the reputation of the department.","company_logo":"https://media.licdn.com/media/AAEAAQAAAAAAAAQ9AAAAJDdhOWRmNGQ5LWNiNzItNDc4OC05NTUyLTg3ODM5YmU5YzZmNg.png","duration":"1
+    year 2 months","start_date":"2011-12-01","end_date":"2013-01-01"},{"title":"Recruitment
+    \u0026 Placement Manager","company":"Giyus Isky","duration":"7 months","start_date":"2011-06-01","end_date":"2011-12-07"},{"title":"Recruit
+    Coordinator","company":"MIT Israel","company_logo":"https://media.licdn.com/media/AAEAAQAAAAAAAAQZAAAAJDA5ZjhhMTE4LWMyYzAtNDQ3OS1hZTU2LTYxZTU2NzkyNGY3OQ.png","duration":"1
+    year 2 months","start_date":"2010-03-01","end_date":"2011-04-01"},{"title":"Recruitment
+    coordinator","company":"Horizons HR","duration":"2 years","start_date":"2017-01-01","end_date":"2010-03-02"},{"title":"Employment
+    Unit Manager","company":"Holon Institute of Technologies","description":"In H.I.T
+    I founded and managed a Unique Employment Unit.A Unit which brought together students
+    and graduates of the institution and lead Companies in the industry.Counseling
+    and career guidance to students and graduates,Finding relevant jobs for them in
+    leading companies, And guidance throughout the process and after.","duration":"2
+    years 3 months","start_date":"2006-01-01","end_date":"2008-03-02"}]'
+  education: '[{"name":"University of Derby","description":"BA, Business ManagementBA,
+    Business Management","degree":null,"major":null,"period":"2000 – 2002","start_date":"2000","end_date":"2002"}]'
+  score: -1.0
+  url: https://www.linkedin.com/in/netakaplan
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2017-01-18 09:34:14.884961000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2017-01-18 09:34:14.884961000 Z
+    zone: *2
+    time: *3
+profile_6:
+  id: 6
+  uid: cfir-carmeli-04435534
+  name: Cfir Carmeli
+  title: DevOps at Dome9 Security
+  current_position: DevOps
+  summary: 'Over 3 years of experience in the field of Operations and And Devops positions
+    , managing all sizes of systems, both Front-end and Back-end on Linux / Microsoft
+    operating systems.Vast knowledge in a wide variety of Open-Source products as
+    well as Microsoft products including:*NIX: RedHat, CentOS, Slackware, Ubuntu,
+    Fedora, etc...Microsoft: Windows Server (all versions), Exchange, Active Directory,
+    etc...- Design and implementation of several Unix/Linux-based monitoring systems
+    such as Nagios, Centerity, SawMill including gathering the data and definition
+    of data manipulation (parsing, aggregation) and writing specific check scripts.-
+    Design and implementation of backup solutions in Linux environments.- Working
+    side by side with software engineering and QA departments in order to answer their
+    technical needs.- Automating everything using bash/python for Linux, powershell
+    for windows and aws api.- Users management: NIS, DNS/BIND, NSCD, SSSD, Samba,
+    Microsoft Active Directory etc..- Databases: Mysql, msSql, MongoDB- Web servers:
+    apache-http, nginx, tomcat, IIS- Shell scripting: Bash (Advanced), Python (basic),
+    PowerShell (basic).- Program language: Java, C. - Misc: git, svn, Junkins, Sult,
+    AWS CodeDeploy.- Monitoring: Nagios, New Relic, Writing check scripts for Nagios.-
+    Logs: Sumologic.'
+  experience: '[{"title":"DevOps","company":"Dome9 Security","location":"Israel","description":"-
+    Leading the DevOps at Dome9.- Bridging between Development teams and Infrastructure
+    professionals.- Deploying Automated, Scalable and Highly-Available Production
+    Environments.- Working with Windows Servers and Linux.- Tools and Systems: AWS,
+    Jenkins, Docker, Continuous Integration, Bash, Python, Power Shell, Git, Sumologic,
+    MongoDB- Create Solutions for Dev. Engineers and QA Department,","company_logo":"https://media.licdn.com/media/AAEAAQAAAAAAAAYBAAAAJDU3YmZlYmUyLTk5MjctNDdhYS1hYjY3LTVjNzk2Nzk0ZThjNQ.png","duration":"1
+    year 4 months","start_date":"2015-10-01","end_date":"Present"},{"title":"Production\\DevOps","company":"Sentrix
+    - Cloud-based Website Security \u0026 DDoS Mitigation","description":"At Sentrix,
+    I''m a Production\\DevOps Engineer which is responsible for the whole operation
+    of production systems in the company.• Design and implementation Nagios monitoring
+    tool.• Linux administrator • AWS - knowledge in most of the services including
+    aws cli• Developed a Docker based delivery using Amazon ECS• Design and implementation
+    of backup solutions in Linux environments• Web servers: apache-http, IIS• Shell
+    scripting: Bash (Advanced), Python (basic), PowerShell (Advanced), Batch (Basic)•
+    Manage a WAF","company_logo":"https://media.licdn.com/media/AAEAAQAAAAAAAAIEAAAAJGM2NjJiZjU2LTdhNGYtNGI0Ni04NGE5LTQ0MmViZjczNGZhOQ.png","duration":"1
+    year","start_date":"2014-11-01","end_date":"2015-10-01"},{"title":"Operations
+    and Quality Control Coordinator","company":"RSA, The Security Division of EMC","description":"•
+    Implementing new procedures in the department• Implementing information systems
+    and new technologies • Frontal tutorials to new fraud teams • Creating stats and
+    reports to customers and managers","company_logo":"https://media.licdn.com/media/AAEAAQAAAAAAAAh4AAAAJDY5NjA0NDEzLTY3YmEtNDFiNy1hN2M3LTA3NGE2YmZlNzlkOA.png","duration":"1
+    year 11 months","start_date":"2012-03-01","end_date":"2014-01-01"},{"title":"AFCC
+    Shift Manager","company":"RSA, The Security Division of EMC","description":"•
+    Managing shifts with up to 30 analysts on site and a remote team of 5-10 persons.•
+    Coordinating the AFCC working with RSA’s project managers, salesman and account
+    managers.• Maintaining a close connection with international financial institutes
+    and internet service providers over the world.","company_logo":"https://media.licdn.com/media/AAEAAQAAAAAAAAh4AAAAJDY5NjA0NDEzLTY3YmEtNDFiNy1hN2M3LTA3NGE2YmZlNzlkOA.png","duration":"3
+    months","start_date":"2011-12-01","end_date":"2012-02-03"},{"title":"Anti Fraud
+    Command Center analyst","company":"RSA The Security Division of EMC","description":"•
+    Finding and identifying fraudulent websites. Investigation, analyzing and shutting
+    them • Extracting forensics items from phishing kits to uncover phishing attack
+    drop points, such as webmail accounts and hosted PHP, JSP etc. files","company_logo":"https://media.licdn.com/media/AAEAAQAAAAAAAAh4AAAAJDY5NjA0NDEzLTY3YmEtNDFiNy1hN2M3LTA3NGE2YmZlNzlkOA.png","duration":"1
+    year 2 months","start_date":"2010-11-01","end_date":"2011-12-01"},{"title":"Technical
+    Support","company":"Bezeq","company_logo":"https://media.licdn.com/media/p/6/000/25f/18b/1b97f23.png","duration":"1
+    year 5 months","start_date":"2009-07-01","end_date":"2010-11-01"},{"title":"Network
+    Technician","company":"013 Netvision","company_logo":"https://media.licdn.com/media/p/1/000/02d/3ef/139b1c1.png","duration":"2
+    years","start_date":"2017-01-01","end_date":"2009-07-02"}]'
+  education: '[{"name":"The College for Academic Studies","description":"Bachelor''s
+    degree, Business Management, specializing in Information SystemsBachelor''s degree,
+    Business Management, specializing in Information Systems","degree":null,"major":null,"period":"2009
+    – 2012","start_date":"2009","end_date":"2012"}]'
+  score: -1.0
+  url: https://www.linkedin.com/in/cfir-carmeli-04435534
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2017-01-18 09:51:21.932490000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2017-01-18 09:51:21.932490000 Z
+    zone: *2
+    time: *3
+profile_7:
+  id: 7
+  uid: galartsi
+  name: Gal Artsi
+  title: DevOps Engineer at Novus.io
+  current_position: DevOps Engineer
+  summary: 
+  experience: '[{"title":"DevOps Engineer","company":"Novus.io","location":"Ramat
+    Gan Area, Israel","company_logo":"https://media.licdn.com/media/AAEAAQAAAAAAAAluAAAAJDg5MTUzYjdlLTc4OWYtNGNlMi04ZWM3LWNmZWE5MzA1NjNhMA.png","duration":"2
+    months","start_date":"2016-12-01","end_date":"Present"},{"title":"Production DevOps
+    Engineer","company":"Kaltura","location":"Israel","description":"Running and optimizing
+    the Kaltura Open Video Platform (OVP) and Over The Top (OTT) saas.Creating solutions
+    in various configurations:Infrastructure: AWS, KVM and VMWare.OS: Windows 2012,
+    Ubuntu, Centos.Database: MySQL, MSSQL, Cassandra, Couchbase.HTTP: Apache, NginX,
+    IIS.Networking: F5, OpenVPN.Scripting: bash, batch, powershell, python and others.","company_logo":"https://media.licdn.com/media/AAEAAQAAAAAAAAl-AAAAJGYzNDU3ZDMzLWViODYtNDU2Yy1hNWY0LTM4Mzg2MGRlYmZjNw.png","duration":"2
+    years 2 months","start_date":"2014-11-01","end_date":"2016-12-02"},{"title":"DevOps
+    Engineer","company":"PLAYWISE","location":"Israel","description":"DevOps Engineer
+    Team MemberAchieving our goals using Jenkins, TFS, SVN and hard work.Supporting
+    both Windows and Linux systems running .Net applications (Web and Services), IIS,
+    MSSQL, GlassFish ESB, WebMethods ESB (IS), TFS, SVN and Jenkins.Working with and
+    Supporting teams around the world.Managing MongoDB servers running on CentOS Platforms.","company_logo":"https://media.licdn.com/media/p/8/005/039/158/0a7fa1b.png","duration":"6
+    months","start_date":"2014-06-01","end_date":"2014-11-06"},{"title":"Build and
+    Release Engineer","company":"Taldor","location":"Israel","description":"* Administrating
+    Windows 2003, 2008 and 2008 R2 servers, DNS, DHCP, Terminal servers and IIS 7.*
+    Deploying 3.5 .net application and creating Installations.* Managing the continuous
+    integration of the project, including managing the SourceControl (SVN) and the
+    Automated Builds (Via CruiseControl).* Management Virtual Servers via Hyper-v
+    2008 R2 and SCVMM 2012.","company_logo":"https://media.licdn.com/media/p/2/000/0c8/070/0dbe0dc.png","duration":"1
+    year 5 months","start_date":"2013-02-01","end_date":"2014-06-01"},{"title":"system
+    administrator / IT team member","company":"IDF - unit 8200","description":"* Managing
+    big-scale Information systems, Servers and Networks.* Administrating Windows NT,
+    2000, 2003 and 2008 Servers. * Administrating VMS OS over HP-Alpha Servers.* Managing
+    over 500 Servers and 1000 Users.* Working in a team of 5-8 IT Professionals.","duration":"3
+    years","start_date":"2017-01-01","end_date":null}]'
+  education: "[]"
+  score: -1.0
+  url: https://www.linkedin.com/in/galartsi
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2017-01-18 09:56:40.168117000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2017-01-18 09:56:40.168117000 Z
+    zone: *2
+    time: *3
+profile_8:
+  id: 8
+  uid: itaiganot
+  name: Itai Ganot
+  title: Devops Engineer at Autodesk
+  current_position: DevOps Engineer
+  summary: 'Over 13 years of experience in the field of system administration, managing
+    all sizes of systems, both Front-end and Back-end on Linux / Microsoft operating
+    systems.Vast knowledge in a wide variety of Open-Source products as well as Microsoft
+    products including:*NIX: RedHat, CentOS, Slackware, Ubuntu, Fedora, etc...Microsoft:
+    Windows Server (all versions), Exchange, Active Directory, etc...- Design and
+    implementation of several Linux-based monitoring systems such as Nagios, Centerity,
+    SawMill including gathering the data and definition of data manipulation (parsing,
+    aggregation) and writing specific check scripts.- Design and implementation of
+    backup solutions in Linux environments.- Working side by side with software engineering
+    departments in order to answer their technical needs.- Automating everything.-
+    Users management: NIS, DNS/BIND, NSCD, SSSD, Samba, Microsoft Active Directory
+    etc..- Databases: Mysql- Web servers: apache-http, nginx, tomcat, IIS- Shell scripting:
+    Bash (Advanced), Python (basic), Ruby (basic), PowerShell (basic), Batch (Basic)-
+    Misc: git, svn, puppet, rabbit-mq.- Virtualization: VMWare, KVM, Xen, Proxmox,
+    OpenVZ, vagrant, VirtualBox.- Monitoring: Nagios, Centerity, pnp4nagios, Writing
+    check scripts for Nagios and Zabbix.- Terminal services, Citrix VDI- Excellent
+    writing skillsI''m an active reviewer at www.serverfault.com (from the StackExchange.com
+    community) - A question and answer site for professional system and network administrators'
+  experience: '[{"title":"DevOps Engineer","company":"Autodesk","description":"As
+    part of the DevOps team which is responsible for creating CI/CD procedures I''m
+    writing Jenkins workflows (Pipeline as a code) using the following technologies:-
+    Jenkins 2.x- Gradle- Groovy- Docker- Git- HockeyApp- Android Studio- Xunit/Junit-
+    Slack- Artifactory","company_logo":"https://media.licdn.com/media/AAEAAQAAAAAAAAcvAAAAJGI4YmE3NGMzLTI5N2YtNDM2NC04NTBjLTU4YWEyMTExZWFiZg.png","duration":"6
+    months","start_date":"2016-08-01","end_date":"Present"},{"title":"DevOps Engineer","company":"Sizmek","description":"At
+    Sizmek, I''m a member of the Ops and Deployment team which is responsible for
+    the operation of the company''s online products.Tasks I handle on daily basics:-
+    Planning, creating and configuring many Linux servers, both physical and virtual.-
+    Releasing new versions of the products at least once per week.- Managing many
+    tomcat java applications.- Managing Puppet (writing manifests, templates and modules
+    for complicated configurations) while using Hiera and Facter.- Re-organizing the
+    company''s Monitoring systems in order to allow better visibility of the networks.-
+    Troubleshooting network and system issues in production servers.- Writing technical
+    documents.- Maintaining HA services.- Automating many procedures, some are related
+    to the release process and some to operations matters.- Managing a Cloudera Distributed
+    Hadoop (CDH 3) cluster.Technologies I work with:Linux CentOS, Ubuntu (client),
+    VMWare ESX, MS Active Directory and HyperV, Proxmox, Apache, Tomcat, Java, Active/Rabbit-MQ,
+    Jira, Bind/Named, Nagios, RRD tools, Puppet, Cobbler, KickStart, TFTP, sssd, HAProxy,
+    Grafana and more...As part of a new project to build and install a new data center,
+    I''ve been given the task to Install, configure and write from scratch the whole
+    puppet environment.","company_logo":"https://media.licdn.com/media/AAEAAQAAAAAAAAkMAAAAJDkwNzE4MWM1LThkY2YtNGM1OS1hMzc0LTY2NmNiYjJkYzE2MQ.png","duration":"1
+    year 11 months","start_date":"2014-09-01","end_date":"2016-07-01"},{"title":"DevOps
+    Engineer","company":"Amadeus","description":"In Amadeus I''m managing the entire
+    production environment which is fully Linux based.Tasks I handle on daily basics:-
+    Managing and troubleshooting a MySQL DRBD cluster and replications.- Managing
+    and troubleshooting of a Postfix+clamd+mailscanner e-mail server.- Designing,
+    Installing and configuring many physical and virtual Linux servers (including
+    RAID configurations).- Setting up OpenVPN servers and clients.- Writing scripts
+    in order to automate processes in the environment.- Managing F5 and Bynet load
+    balancers.- Implementing Puppet.- Writing recovery procedures.- Writing technical
+    documentation.","company_logo":"https://media.licdn.com/media/p/1/005/03d/394/1a0fbae.png","duration":"1
+    year 5 months","start_date":"2013-05-01","end_date":"2014-09-01"},{"title":"DevOps
+    Engineer","company":"Perion","description":"In my role at Perion, I was part of
+    the Production team which is responsible for managing, maintaining and implementation
+    of online services in a LAMP production environment.Tasks I handle on daily basis:-
+    Installation and implementation of new CentOS Linux servers including configuration
+    and hardening of the OS.- Python\\BASH scripting and automation of processes in
+    the environment.- Installation and configuration of many products such as:Squid,
+    Apache, Tomcat, Sawmill, IPTables, Quagga, F5, XenServer / XenCenter, VMWare vSphere,
+    Microsoft Windows Server 2008 R2, IIS, Nagios, Jira, Samba, Bind, keepalived-
+    Traffic management.During the time I’m working here I’ve gained deeper knowledge
+    in networking, security and routing.","company_logo":"https://media.licdn.com/media/AAEAAQAAAAAAAAeQAAAAJDE1ZWM2ZmZlLTI1YzEtNDQ4Ny05MmY4LTlmMDliM2ZlNjU2YQ.png","duration":"8
+    months","start_date":"2012-09-01","end_date":"2013-04-08"},{"title":"System Team
+    Leader","company":"Assuta Medical Centers","description":"In my role at Assuta
+    I''m managing three team members in addition to being responsible for the full
+    operation of application interfaces in the hospital as well as scripting in PowerShell,
+    writing technical documents, implementing methodologies, finding creative solutions
+    for daily system challenges, keeping in daily touch with a large number of suppliers
+    in a variety of fields such as: Information security, networking, monitoring,
+    databases, protection systems, supervision systems etc.As part of being responsible
+    for the application interfaces I’m taking an active part in understanding the
+    needs through the tests stage and until the implementation in production environment.While
+    working here I’ve gained a lot knowledge about information security standards,
+    regulations and it’s necessity and I’ve accompanied the process of preparing the
+    organization to the yearly test of Mechon Hatkanim.In my work at Assuta I work
+    with the following technologies: Juniper SSL Vpn, CheckPoint Firewall r71, Symantec
+    DLP, Active Directory, Centerity, SCOM 2007, VMware ESX/i, Trend Micro TMCM, RHEL
+    5.5, Centos, ControlUp, Citrix VDI, Microsoft Terminal, Cockpit, MS Lync,Data
+    Protector, Netapp, Cyber-Ark, Cidway, Algosec, Safend, Exchange, ForeScout, F5
+    Big-IP.","company_logo":"https://media.licdn.com/media/p/1/000/27a/108/00b9b45.png","duration":"10
+    months","start_date":"2011-12-01","end_date":"2012-09-10"},{"title":"Support Engineer","company":"Varonis","description":"As
+    a Support Engineer in Varonis I’ve supported many major corporates over the globe
+    as well as supporting the rest of the departments in the company in IT matters.During
+    my work I’ve wrote many technical documents and took an active part in building
+    a knowledge base, I’ve managed a VMWare environment with many virtual machines
+    and kept in close touch with the QA and Engineering teams in order to solve issues
+    quicker and more professionally. In my work at Varonis I’ve worked with the following
+    technologies:Varonis, MS Servers (all versions), MS Sql server (all versions)/Reporting
+    Services, Office 365, MS Sharepoint, Netapp, EMC Celerra, BlueArc, phpkb, VMware,
+    RSA SecureID, Cisco FW, Webex","company_logo":"https://media.licdn.com/media/AAEAAQAAAAAAAAj5AAAAJGFlMDM1ZjAxLWY0YTMtNGE2My05Njk5LWVlMWYzYjM3YWNkOQ.png","duration":"2
+    years 1 month","start_date":"2009-12-01","end_date":"2011-12-02"},{"title":"Israel
+    Sysadmin","company":"Hertz Rent a Car","description":"In Hertz Israel, I’ve been
+    the senior system administrator and I was responsible to the operation of the
+    whole computer systems in a 24/7 availability and I’ve worked there with the following
+    technologies:Linux - RedHat, CentOS AS400 - WCS, Client Access, BossanovaMicrosoft
+    - Servers, Terminal farm, Active Directory, Exchange, SQL ServerStorage - Netapp,
+    EMCVirtualization - VMWare Vsphere 4, Virtualbox","company_logo":"https://media.licdn.com/media/AAEAAQAAAAAAAAjhAAAAJDdlMDAzNTcxLTU3OGUtNDcwZC04YzEzLWNmZGFjMTAxOTA5OA.png","duration":"2
+    years","start_date":"2007-10-01","end_date":"2009-09-02"},{"title":"System Administrator","company":"Yael
+    Software","description":"In Yael Software I''ve taken an active part in many expert
+    projects at a number of organizations around the country.","company_logo":"https://media.licdn.com/media/p/8/000/1ca/091/1de087c.png","duration":"2
+    years","start_date":"2017-01-01","end_date":null},{"title":"Network Administrator","company":"Bynet","description":"In
+    my role at Bynet Network Communications, I was a member of an expert team which
+    remotely managed customer’s sites.Every member of the team was also an Account
+    Manager and managed 8-10 permanent customer sites.While working there, I’ve gained
+    the basic knowledge (and much more) which is required for working in IT environments.Tasks
+    I’ve handled with on daily basis:- Morning checks of all servers on the customer’s
+    end including filling a daily report.- Managing the backup and recovery software
+    as well as Active directory, Exchange, Anti-Virus and all other critical servers
+    in the organization.- Reviewing products before purchase/implementation at the
+    site.- Supporting end users with all kinds of problems they encounter during work
+    time.- Installation/configuration of new printers and print servers.- Weekly maintenance
+    on all servers of each customer.","company_logo":"https://media.licdn.com/media/p/3/005/089/2f3/16f35b2.png","duration":"3
+    years 2 months","start_date":"2004-01-01","end_date":"2007-02-03"},{"title":"Technician","company":"DSP
+    Group","description":"I was a part of the Technicians team which was responsible
+    for client installations, hardware maintenance, network wiring, application reviews
+    before purchasing, etc...","company_logo":"https://media.licdn.com/media/p/3/005/01e/147/18d506c.png","duration":"1
+    year","start_date":"2017-01-01","end_date":null},{"title":"IDF - Mamram - System
+    Administrator and QA","company":"Mamram","description":"Classified.","duration":"2
+    years 1 month","start_date":"2001-01-01","end_date":"2003-01-02"}]'
+  education: '[{"name":"IITC - Technology and communication training center","description":"Cloudera
+    Administrator Training for Apache HadoopCloudera Administrator Training for Apache
+    Hadoop","degree":null,"major":null,"period":"2014 – 2014","start_date":"2014","end_date":"2014"},{"name":"John
+    Bryce ltd","description":"LPIC-3, Senior Level Linux ProfessionalLPIC-3, Senior
+    Level Linux Professional","degree":null,"major":null,"period":"2009 – 2009","start_date":"2009","end_date":"2009"},{"name":"John
+    Bryce ltd","description":"MCSE\\CCSA, Networking, SecurityMCSE\\CCSA, Networking,
+    Security","degree":null,"major":null,"period":"2003 – 2004","start_date":"2003","end_date":"2004"}]'
+  score: -1.0
+  url: https://www.linkedin.com/in/itaiganot
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2017-01-18 09:58:50.204920000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2017-01-18 10:04:08.279743000 Z
+    zone: *2
+    time: *3
