@@ -51,11 +51,21 @@ class Profile < ApplicationRecord
 
   # Supported arguments:
   # profile_filter = { name: 'Gal Artsi', title: 'DevOps Engineer at Novus.io', current_position: 'DevOps Engineer'}
-  #
   # skills_filter = ["Servers", "SQL", "IIS", "Windows Server", "DevOps", "Linux", "Bash", "Integration"]
-
-  # sql = Profile; profile_filter.each { |column, value| sql = sql.where("#{column} LIKE '%#{value}%'")}
+  #
+  # Should add limit 
   def self.filter(profile_filter={}, skills_filter=[])
+
+    if profile_filter.blank?
+      if skills_filter.present?
+        profile_ids = Skill.where(name: skills_filter).pluck(:profile_id)
+        profiles = Profile.where(id: profile_ids)
+        return profiles
+      else
+        # If there is no filter, return all
+        return self.all
+      end
+    end
 
     # Concatenate sql query
     sql = self
