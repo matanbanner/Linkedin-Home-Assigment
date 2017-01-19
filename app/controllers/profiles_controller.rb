@@ -46,6 +46,56 @@ class ProfilesController < ApplicationController
   end
 
 
+
+########  API ENDPOINTS #########
+
+  # GET /profiles/import_profile?url=url
+  # { url: 'https://www.linkedin.com/in/bracha-madar-34ab2424' }.to_query
+  #http://localhost:3000/profiles/import_profile?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fbracha-madar-34ab2424
+  def import_profile
+    url = params[:url]
+    if Profile::URL_REGEX2.match(url).nil?
+      render json: {status: "error", message: "#{url} not valid URL"}
+    else
+      begin
+        profile = Profile.build(url)
+        profile.save
+        render json: {status: "ok"}
+      rescue => e
+        render json: {status: "error", message: e.message}
+      end
+    end
+  end
+
+  # GET /profiles/searech_by_skills?skills=[...]
+  # {skills: ["Servers", "SQL", "IIS", "Windows Server"]}.to_query
+  # http://localhost:3000/profiles/search_by_skills?skills%5B%5D=Servers&skills%5B%5D=SQL&skills%5B%5D=IIS&skills%5B%5D=Windows+Server
+  def search_by_skills
+    skills_filter = params[:skills]
+    if skills_filter.is_a?(Array)
+      profiles = Profile.filter({}, skills_filter)
+      render json: {status: "ok", data: {profiles: profiles}}
+    else
+      render json: {status: "error", message: 'Parameter (skills) should be an array'}
+    end
+  end
+
+  # GET /profiles/search_by_attrs?name=<name>&title=<title>&....
+  # {current_position: 'DevOps Engineer'}.to_query(:profile)
+  def search_by_attrs
+    profile_filter = profile_params.to_h.reject{|k,v| v.blank?}
+    profiles = Profile.filter(profile_filter)
+    render json: {status: "ok", data: {profiles: profiles}}
+  end
+
+#################################
+
+
+
+
+
+
+
   # POST /profiles
   # POST /profiles.json
   def create

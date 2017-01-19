@@ -53,7 +53,7 @@ class Profile < ApplicationRecord
   # profile_filter = { name: 'Gal Artsi', title: 'DevOps Engineer at Novus.io', current_position: 'DevOps Engineer'}
   # skills_filter = ["Servers", "SQL", "IIS", "Windows Server", "DevOps", "Linux", "Bash", "Integration"]
   #
-  # Should add limit 
+  # Should add limit
   def self.filter(profile_filter={}, skills_filter=[])
 
     if profile_filter.blank?
@@ -116,5 +116,13 @@ class Profile < ApplicationRecord
   def score
     read_attribute(:score) || 0
   end
+
+  def to_json
+    h = self.attributes
+    h["skills"] = self.skills.map(&:name)
+    h.to_json(only: ["name", "title", "current_position", "summary", "experience", "education", "score", "skills"])
+  end
+
+
 
 end

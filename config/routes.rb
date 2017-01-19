@@ -6,6 +6,11 @@ Rails.application.routes.draw do
     collection do
       get 'import'
       get 'search'
+
+
+      get 'import_profile'
+      get 'search_by_skills'
+      get 'search_by_attrs'
     end
   end
 
