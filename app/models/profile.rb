@@ -87,14 +87,33 @@ class Profile < ApplicationRecord
     end
   end
 
-
   def self.call_linkedin(url)
     p = Linkedin::Profile.new(url)
   end
 
+  #
   def calc_score
-    # Stub function
-    -1
+    regex_has_years = /([0-9]*) year[s]?($| ([0-9]*) month[s]?)/
+    regex_months_only = /([0-9]*) month[s]?/
+
+    tot_experience = 0
+    self.experience.each do |job|
+      duration = job["duration"]
+       if regex_has_years =~ duration
+         years = $1.to_i
+         months = $3.to_i
+        #  puts "years=#{years} months=#{months}"
+       elsif regex_months_only =~ duration
+         years = 0
+         months = $1.to_i
+        #  puts "years=#{years} months=#{months}"
+       end
+       tot_experience += ((years * 12) + months)
+    end
+
+    score = (tot_experience * 0.6 + self.skills.count * 0.4).round(2)
+    score
+
   end
 
   def experience
@@ -114,7 +133,7 @@ class Profile < ApplicationRecord
   end
 
   def score
-    read_attribute(:score) || 0
+    read_attribute(:score) || 0.0
   end
 
   def to_json

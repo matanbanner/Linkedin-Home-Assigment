@@ -15,6 +15,7 @@ class ProfilesController < ApplicationController
       if Profile::URL_REGEX2.match(url).nil?
         flash[:alert] = "Error: #{url} not valid URL"
       else
+        # Enqueue url to a job queque
         ImportProfileJob.perform_later(url)
         flash[:alert] = 'Profile will be created in the background, feel free to enter a new url...'
         # profile = Profile.build(url)
