@@ -7,7 +7,7 @@ Rails.application.routes.draw do
       get 'import'
       get 'search'
 
-
+      # API endpoints
       get 'import_profile'
       get 'search_by_skills'
       get 'search_by_attrs'
