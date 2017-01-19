@@ -6,6 +6,12 @@
 </p>
 
 <p>
+  <strong>Url:</strong>
+  <%= link_to @profile.url, @profile.url %>
+</p>
+
+
+<p>
   <strong>Name:</strong>
   <%= @profile.name %>
 </p>
@@ -49,9 +55,5 @@
   <%= @profile.score %>
 </p>
 
-<p>
-  <strong>Url:</strong>
-  <%= @profile.url %>
-</p>
 
 <%= link_to 'Back', 'search' %>
