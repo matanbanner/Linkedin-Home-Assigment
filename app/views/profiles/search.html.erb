@@ -1,0 +1,85 @@
+<h1>Search Profiles</h1>
+
+<p>
+<li>Searching without conditions (all fields blank) retrieve ALL profiles </li>
+<li>You can search for skills by setting comma seperated skills (e.g. "Linux, Red Hat Linux, CentOS, Jenkins, Shell Scripting") </li>
+<li>Fields: Name, Title, Current Position and Summary are case insensitive, and will match also substrings </li>
+</p>
+
+
+
+<%= form_tag('/profiles/search', method: "get") do %>
+
+  <div class="field">
+    <%= label_tag :name %>
+    <%= text_field_tag "profile[name]" %>
+  </div>
+
+  <div class="field">
+    <%= label_tag :title %>
+    <%= text_field_tag "profile[title]" %>
+  </div>
+
+  <div class="field">
+    <%= label_tag :current_position %>
+    <%= text_field_tag "profile[current_position]" %>
+  </div>
+
+  <div class="field">
+    <%= label_tag :summary %>
+    <%= text_area_tag "profile[summary]" %>
+  </div>
+
+  <div class="field">
+    <%= label_tag :skills %>
+    <%= text_area_tag "skills", nil, placeholder: "Comma separated values" %>
+  </div>
+
+
+  <div class="actions">
+    <%= submit_tag("Search") %>
+  </div>
+
+
+<% end %>
+
+
+<p>
+<%= link_to 'Import New Profile', controller: :profiles, action: :import %>
+</p>
+
+
+
+
+<% if @profiles.present? %>
+
+  <div class="results">
+    <table width="100%" style="table-layout:fixed;" class="gridtable" id="Select-b">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Title</th>
+          <th>Position</th>
+          <th>Summay</th>
+          <th>Skills</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @profiles.each do |profile| %>
+          <tr>
+            <td id="appadd"><%= profile.name %></td>
+            <td id="appadd"><%= profile.title %></td>
+            <td id="appadd"><%= profile.current_position %></td>
+            <td id="appadd"><%= profile.summary %></td>
+            <td id="appadd"><%= profile.skills.map(&:name).join(", ") %></td>
+            <td id="appadd"><%= profile.score %></td>
+            <td><%= link_to 'Show', profile %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+  </div>
+<% end %>

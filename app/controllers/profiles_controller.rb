@@ -35,6 +35,16 @@ class ProfilesController < ApplicationController
     end
   end
 
+  # GET /profiles/search
+  def search
+    if params[:commit]
+      skills_str = params[:skills]
+      skills_filter = skills_str.split(',')
+      profile_filter = profile_params.to_h.reject{|k,v| v.blank?}
+      @profiles = Profile.filter(profile_filter, skills_filter)
+    end
+  end
+
 
   # POST /profiles
   # POST /profiles.json
