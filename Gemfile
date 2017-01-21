@@ -57,3 +57,6 @@ gem 'linkedin-scraper'
 
 # Dump DB into fixtures
 gem 'fixtures_dumper'
+
+# 
+gem 'bulk_insert'
