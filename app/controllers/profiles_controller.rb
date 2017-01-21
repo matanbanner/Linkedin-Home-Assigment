@@ -19,7 +19,7 @@ class ProfilesController < ApplicationController
         ImportProfileJob.perform_later(url)
         flash[:alert] = 'Profile will be created in the background, feel free to enter a new url...'
         # profile = Profile.build(url)
-        # profile.save
+        # profile.store
       end
     end
   end
@@ -48,7 +48,7 @@ class ProfilesController < ApplicationController
       # Enqueue url to a job queque
       ImportProfileJob.perform_later(url)
       # profile = Profile.build(url)
-      # profile.save
+      # profile.store
       render json: {
         status: "ok",
         params: {url: url}

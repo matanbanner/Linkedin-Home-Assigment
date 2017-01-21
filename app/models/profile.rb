@@ -49,6 +49,27 @@ class Profile < ApplicationRecord
 
   end
 
+  # Store profile and its skills at the same transaction for compatibility
+  # Uses bulk_insert gem in order to insert skills in a single sql command  
+  def store
+    ActiveRecord::Base.transaction do
+      # Save New skills
+      new_skills = self.skills.select{|skill| skill.new_record?}
+
+      # Delete old skills
+      if self.persisted?
+        ids = self.skills.delete_all
+      end
+
+      # bulk insert skills
+      hashes = new_skills.map(&:attributes).map{|skill| skill.slice("profile_id", "name")}
+      Skill.bulk_insert values: hashes
+
+      # save profile
+      self.save
+    end
+  end
+
   # Supported arguments:
   # profile_filter = { name: 'Gal Artsi', title: 'DevOps Engineer at Novus.io', current_position: 'DevOps Engineer'}
   # skills_filter = ["Servers", "SQL", "IIS", "Windows Server", "DevOps", "Linux", "Bash", "Integration"]

@@ -3,6 +3,6 @@ class ImportProfileJob < ApplicationJob
 
   def perform(url)
     profile = Profile.build(url)
-    profile.save
+    profile.store
   end
 end
